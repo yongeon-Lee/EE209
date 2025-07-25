@@ -1,0 +1,28 @@
+[EE209] Assignment 3: Customer Management Table
+
+Name : Yongeon Lee
+Student ID : 20170476
+
+1.No help from others except TA
+
+2.Compare the implementation of customer_manager using array and the one using hash table respectively.
+Please try to provide reasonable explanation for the pros and cons of each implementaion.
+A: Using Array is slower than Using hash table when the user increases. 
+   Using Array requires lots of time when searching specific user. To find the empty space for save information,
+   we have to check whether it is empty or not from the first array elements. By user increases, the amount of time to find empty space
+   will also increase dramatically.
+   However, when we use Hash Table, we can search a lot faster than array to search specific user. Because, when we get some key to find
+   specific user such as name or id, we only need to find the certain hash linked elements which has the same hash number. In other words,
+   it will be enough to find the specific user information among the users which has the same hash number.
+   So, the hash implementaion will be much more faster when search the users.
+
+3. I've implement the hash expansion. I implement hash expansion inside the RegisterCustomer function.
+   <My Hash expansion algorithm>
+   First, if the node is over 75% of the buckets, save the curArrSize at the int variable 'before'
+   and then increase curArrSize by 1024 inside the DB.
+   Then, dynamic allocates memory two times by calloc() to make the two hash table, name and id respectively.
+   Copy all the elements from old hash table to new calloc() hash table array with new hash number. 
+   -copy through all the node using only name hash table using 'before' variable.
+
+4. I will use 1 day token. 
+

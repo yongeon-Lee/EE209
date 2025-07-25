@@ -1,0 +1,15 @@
+Programming Structures for EE (EE209)
+
+Assignment 2: String Manipulation
+
+Name : Yongeon Lee
+Student ID : 20170476
+
+I get some help from my EE209 tutor Gundo Seo about Strcopy bugs.
+
+Q. Is it possible for StrCopy to call assert to verify that the destination memory area specified by the caller is large enough? Explain.
+A. It is not possible to verify the destination memory area is large enough by assertions because the error only occurs when the
+   destination memory is not specified by the caller for example, the destination is specified by null pointer. So, it is no way to check by using assert function
+   that the destination is large enough to copy.
+
+I have used pointer notation for extra credit.

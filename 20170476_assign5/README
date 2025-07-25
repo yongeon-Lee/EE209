@@ -1,0 +1,10 @@
+Compile command
+: gcc shell.c -o swsh
+Run ./swsh
+
+I've implement pipe command(|), two shell built-in command(exit, cd), and other non-bulit-in command.
+Also, this mini shell ignores SIGINT, SIGTSTP signal.
+
+**CAUTION** DO NOT  give EOF(Ctrl+D)signal, it'll give segmentation fault.
+
+If you have any question, please contact to yongeon@kaist.ac.kr, thank you.
